@@ -1,0 +1,25 @@
+*{padding:0;
+    margin: 0;}
+    
+    wrapper{
+bacground:ur1(r.jpg) no-repeat ;
+background-size:cover;
+heigh:100vh;
+    }
+    
+    
+    
+    
+    .navbar{
+     height:80px;
+     width:100%;
+     background:rgba(0, 0, 0, 0.4)
+     }
+     
+    .logo{
+     width:140px;
+     height:50px;
+     padding:20px;
+     
+    }
+    
