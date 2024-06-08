@@ -1,0 +1,123 @@
+<!--Create a simple page webpage,make use of "div" and CSS to design header, footer and navigation section of it-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>END TERM PRACTICAL</title>
+    <style>
+        .navbar{
+            color:white;
+            background-image: linear-gradient(orange,purple);
+            border-radius: 45px;
+        }
+        .navbar:hover{
+            color:lightcyan;
+        }
+        #home:hover{
+            background-color: lightcyan;
+        }
+        #about:hover{
+            background-color: lightcyan;
+        }
+        #services:hover{
+            background-color: lightcyan;
+        }
+        #contact:hover{
+            background-color: lightcyan;
+        }
+        .navbar li{
+            float:left;
+            list-style: none;
+            padding: 3px 2px;
+            margin: 13px 25px; 
+            font-size: 35px;           
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color:black;
+        }   
+        
+        
+        body{
+            background-image:url("ledimg.jpg");
+        }
+        
+        .div1{
+            background-color: white;
+            box-sizing:border-box;
+            padding: 25px;
+            margin:100px;
+            border-radius: 10px;
+            border-style:groove;
+        }
+        .div1 h1{
+            text-align: center;
+            background-color: #ff00a6;
+            color: black;
+            font-style: italic;
+            border-style:ridge;
+            border-radius:10px;
+        }
+    
+    .navbar li{
+        
+        margin-inline-end: 50px;
+    }
+
+    
+    #quote{
+        border-style:ridge;
+        border-radius: 10px;
+        background-color: rgb(89, 130, 165);
+        color: black;
+        width: 1420px;
+        padding: 10px;
+    }
+    #quote h1{
+        background-image: linear-gradient(white,#00ff48);
+        text-align: center;
+    }
+    
+    
+        </style>
+</head>
+<body>
+    
+    <header>
+    <div>
+        <nav class="navbar">
+            <ul>
+                <img id="#" src="#" alt="logo">
+                <li ><a id="home" href="#">Home</a></li>
+                <li><a  id="about" href="#">About</a></li>
+                <li><a id="services" href="#">Services</a></li>
+                <li><a id ="contact" href="#">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    </div>
+</header>
+<div id="quote">
+    <h1>Lovely Professional University PUNJAB</h1>
+    <marquee> "I used all the tags that are written on my question paper and tried to do my best"</marquee>
+    </div>
+<div class="div1" >
+    <h1>Hello Mam This is my First ETP Plz give good marks its a humble request</h1>
+    <p><pre> Name - Rishabh Varshney
+             Course - Internet Programming Laboratory
+             Couse code - CSE(326)
+             Registration Number - 12207817
+    </pre></p>
+</div>
+
+    
+</body>
+<footer>
+</footer>
+</html>
