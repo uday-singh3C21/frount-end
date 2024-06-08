@@ -1,0 +1,34 @@
+<!--Create a simple webpage with a textbox(a digit 1-7 to be entered in it)and a button ,such
+that on clicking the button , an alert box shoes week day for the corresponding number(e.g.Monday for 1,Tuesday for 2 etc)-->
+
+<html>
+  <head>
+    <title>Weekday Calculator</title>
+  </head>
+  <body>
+    <h1>Weekday Calculator</h1>
+    <p>Enter a number between 1 and 7:</p>
+    <input type="text" id="numInput">
+    <button onclick="calculateWeekday()">Calculate Weekday</button>
+    <script>
+      function calculateWeekday() {
+        // Get the value of the input field
+        var num = document.getElementById("numInput").value;
+
+        // Initialize an array of weekdays
+        var weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+        // If the entered value is between 1 and 7, display the corresponding weekday
+        if (num >= 1 && num <= 7) {alert(weekdays[num - 1]);
+        } else {
+          alert("Please enter a number between 1 and 7.");
+        }
+      }
+    </script>
+  </body>
+</html>
+In this example, we have an HTML input element with an id attribute of "numInput" and a HTML button element with an onclick attribute that calls the calculateWeekday function when clicked. The calculateWeekday function gets the value of the input field using the getElementById function and stores it in the num variable. It uses the num variable to display the corresponding weekday using the alert function. If the entered value is not between 1 and 7, it asks you to enter the number between 1 to 7.
+
+
+
+
