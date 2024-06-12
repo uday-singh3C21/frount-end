@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <form>
+      <label for="age">Enter the age of the person:</label><br>
+      <input type="text" id="age" name="age"><br>
+      <button type="button" onclick="determineAgeCategory()">Determine Age Category</button>
+      <br><br>
+      <label for="result">Age Category:</label><br>
+      <input type="text" id="result" name="result" readonly>
+    </form> 
+  </body>
+  <script>
+    function determineAgeCategory() {
+      var age = document.getElementById("age").value;
+      if (age < 18) {
+        document.getElementById("result").value = "Child";
+      } else if (age >= 18 && age < 60) {
+        document.getElementById("result").value = "Young";
+      } else {
+        document.getElementById("result").value = "Old";
+      }
+    }
+  </script>
+  </html>
