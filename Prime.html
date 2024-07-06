@@ -1,0 +1,40 @@
+<html>
+<head>
+    
+
+    
+    
+    </head>
+    <body>
+        Enter First Number:<input type="number" id="a">
+            Enter Last Number <input type="number" id="b">
+            <input type="submit" value="Print_prime"
+            onclick="prime()">
+            <script type="text/javascript">
+            var num,num1,i,f=0;
+                function prime()
+                {
+                    num=Number(document.getElementById("a").value);
+                    num1=Number(document.getElementById("b").number);
+                    while(num<=num1)
+                        { 
+                            f=0;
+                            for(i=1;i<=num;i++)
+                                {
+                                    if(num%i==0)
+                                        {
+                                            f++;
+                                        }
+                                }
+                            if(f==2)
+                                {
+                                    document.write(num+"<br>")
+                                }
+                            console.log(num);
+                            num++;
+                        }
+                        
+                }
+        </script>
+    </body>
+</html>
