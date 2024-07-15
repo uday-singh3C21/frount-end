@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td rowspan="4">a</td>
+            <td colspan="3">b</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">c</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">d</td>
+            <td>e</td>
+        </tr>
+
+        <tr>
+            <td>f</td>
+            <td>g</td>
+            <td>b</td>
+        </tr>
+
+    </table> -->
+
+
+
+    <script>
+        let a = prompt("Enter the number which you want to check??")
+        var x = Number(a)
+        if(x==1){
+            alert("Number is not prime and not even composite");
+        }
+
+        else if(x<1){
+            alert("Number is not prime");
+        }
+        
+        else{
+         
+            for(var i = 2; i<x;i++){
+             if(x%i==0){
+                var res= "number is not prime";
+                break;
+             }
+
+
+             else {
+                var res = "number is a prime";
+             }
+
+            }
+
+            document.write(res)
+            }
+     
+    </script>
+
+-->
+
+
+<!--palindrome
+<script>
+    var string = prompt("Enter the string")
+    console.log(string.length);
+    x = string.length;
+   var res = "it is palindrome";
+    for(var i =0;i<x/2; i++){
+        console.log(string[i]);
+
+        if(string[i] != string[ x -i-1]){
+          res = "it is not palindrome"
+            
+        }
+  
+}
+console.log(res);
+</script>
+-->
+
+
+<u></u>
+<i></i>
+<b></b>
+<sub></sub>
+<sup></sup>
+<strike></strike>
+<big></big>
+<small></small>
+<strong></strong>
+<em></em>
+
+<!--
+<style>
+#parent{
+    display: inline-block;
+    position: relative;
+}
+
+#parent #tooltip{
+    visibility: hidden;
+    background-color: black;
+    width:130px;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+}
+
+#parent:hover #tooltip
+{
+    visibility: visible;
+
+}
+</style>
+
+<div id="parent">
+    cm to scl
+    <div id="tooltip">Come to school.</div>
+</div>
+
+-->
+
+
+
+
+
+Name: <input type="text" id="name" name="name" placeholder="Name" >
+<br><br>
+<button onclick="disable()">Click me</button>
+
+
+
+<script>
+    function disable(){
+        document.getElementById("name").disabled = true;   
+         }
+</script>
+
+
+
+<script>
+function checkLeapYear(year) {
+
+    //three conditions to find out the leap year
+    if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+        console.log(year + ' is a leap year');
+    } else {
+        console.log(year + ' is not a leap year');
+    }
+}
+
+// take input
+const year = prompt('Enter a year:');
+
+checkLeapYear(year);
+</script>
+
+
+
+
+
+
+</body>
+</html>
