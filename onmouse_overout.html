@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1" onmouseover="myfunction(this)">this is my paragraph</p>
+    <p id="p2" onmouseover="myfunction(this)">this is our paragraph</p>
+    <script>
+        function myfunction(x) {
+            alert("onmouseover event is called.")
+            x.style.backgroundColor = "yellow";
+        }
+        function myfunction(x) {
+            x.style.backgroundColor = "orange";
+        }
+    </script>
+</body>
+
+</html>
