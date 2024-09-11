@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the document obeject</h1>
+    <h2>the querySelector() method</h2>
+    <div class="example">this is a div</div>
+    <p>add the background color to the first element with class="example" : </p>
+    <p class="example" id="p1">i am paragraph</p>
+    <p class="example" id="p2">i am paragraph</p>
+    <script>
+        document.querySelector("#p1").innerText="this is a new paragraph";
+        document.querySelector(".example").style.backgroundColor="red";
+        document.querySelectorAll(".example")[1].style.backgroundColor="blue";
+        document.querySelector("p").innerHTML="hello world";
+        document.querySelectorAll("p")[0].innerHTML="this is second paragraph";
+    </script>
+</body>
+</html>
